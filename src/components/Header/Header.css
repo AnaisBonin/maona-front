@@ -1,0 +1,46 @@
+header {
+  width: 100vw;
+}
+
+/*  */
+/* HEADER LOGO */
+/*  */
+
+.header-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem;
+}
+
+.header-menu-logo, .header-shopping-logo {
+  padding-top: 1rem;
+  width: 32px;
+}
+
+.maona-logo {
+  width: 200px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.maona-logo img {
+  width: 100%;
+}
+
+/*  */
+/* HEADER NAV */
+/*  */
+
+.header-nav li {
+  padding: 1.2rem 3rem;
+  border-bottom: 0.5px solid var(--light-grey);
+  transition: all 0.4s ease-in-out;
+}
+
+.header-nav li:hover {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--green);
+}

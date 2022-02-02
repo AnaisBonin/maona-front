@@ -7,6 +7,7 @@
   --orange: #F68C62;
   --green: #356B75;
   --blue: #121648;
+  --grey: #A49F91;
   --dark: #04072e;
 }
 
@@ -15,6 +16,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  color: var(--dark);
 }
 
 .allura {
@@ -24,6 +27,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 button:hover, a:hover {
