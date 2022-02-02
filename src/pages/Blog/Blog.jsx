@@ -3,10 +3,10 @@ import './Blog.css';
 
 const Blog = () => {
   return (
-    <section> 
+    <main> 
       <h1>Blog</h1>
       <BlogArticle />
-    </section>
+    </main>
   );
 };
 

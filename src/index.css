@@ -20,6 +20,25 @@ body {
   color: var(--dark);
 }
 
+.green-text {
+  color: var(--green);
+}
+
+.blue-text {
+  color: var(--blue);
+}
+
+.orange-text {
+  color: var(--orange);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
 .allura {
   font-family: 'Allura', cursive;
 }

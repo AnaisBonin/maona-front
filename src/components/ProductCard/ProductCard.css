@@ -1,0 +1,15 @@
+.product-card-image {
+  width: 200px;
+  height: 200px;
+  background-color: var(--orange);
+}
+
+.product-card-information {
+  margin: 1rem 0;
+  color: var(--blue);
+  line-height: 0.7rem;
+}
+
+.product-card-information h3 {
+  font-weight: 400;
+}

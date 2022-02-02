@@ -1,0 +1,22 @@
+.home-container {
+  margin: 2rem 0;
+}
+
+.home-container h2 {
+  padding-top: 3rem;
+  color: var(--green);
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+
+.home-essentials-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-testimonials-title {
+  width: 80%;
+  text-align: center;
+  border-top: 2px solid var(--light-grey);
+}

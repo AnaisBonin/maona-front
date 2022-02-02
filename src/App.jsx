@@ -9,22 +9,22 @@ import Contact from './pages/Contact/Contact';
 
 import './App.css';
 import Products from './pages/Products/Products';
+import ProductPage from './pages/ProductPage/ProductPage';
 
 const App = () => {
   return (
-    <main className="app-main-container">
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/maona" element={<About />} />
-          <Route path="/collection/:name" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </main>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/maona" element={<About />} />
+        <Route path="/collection/:name" element={<Products />} />
+        <Route path="/produits/:id" element={<ProductPage />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 

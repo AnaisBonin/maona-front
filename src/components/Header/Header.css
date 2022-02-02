@@ -1,5 +1,6 @@
 header {
   width: 100vw;
+  margin-bottom: 3rem;
 }
 
 /*  */
@@ -11,6 +12,16 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   margin: 3rem;
+}
+
+.header-logos button {
+  background-color: inherit;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-active {
+  transform: rotate(90deg);
 }
 
 .header-menu-logo, .header-shopping-logo {
@@ -32,6 +43,18 @@ header {
 /*  */
 /* HEADER NAV */
 /*  */
+
+.header-nav {
+  transition: all 0.5s ease-in-out;
+  height: auto;
+  opacity: 1;
+}
+
+.menu-hidden {
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
 
 .header-nav li {
   padding: 1.2rem 3rem;
