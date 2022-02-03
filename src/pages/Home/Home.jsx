@@ -44,7 +44,7 @@ const Home = () => {
     <main className="home-container">
       <AboutMe />
       <h2 className="home-essentials-title">Nos essentiels</h2>
-      <div className="home-essentials-cards">
+      <section className="products-cards-container">
         {essentials === 'error' && (
           <p>Oops! Nous rencontrons une erreur - veuillez nous excuser.</p>
         )}
@@ -58,7 +58,7 @@ const Home = () => {
               key={i}
             />
           ))}
-      </div>
+      </section>
       <h2 className="home-testimonials-title">Témoignages</h2>
       {testimonials &&
         testimonials.map((comment, i) => (

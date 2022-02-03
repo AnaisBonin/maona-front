@@ -2,6 +2,11 @@
   padding: 1rem 4rem;
 }
 
+.product-page-container section {
+  max-width: 600px;
+  width: 100%;
+}
+
 .product-page-title {
   width: 100vw;
   padding: 1rem;
@@ -19,14 +24,17 @@
 /*  */
 
 .product-page-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin: 1rem 0;
 }
 
 .main-product-image {
-  min-width: 100%;
-  min-height: 350px;
-  height: 50px;
+  max-height: 500px;
+  width: auto;
+  max-width: 100%;
   background-color: var(--orange);
 }
 
@@ -48,7 +56,7 @@
 /*  */
 
 .product-page-information {
-  width: 100%;
+  margin-top: 2rem;
 }
 
 .product-page-information h2 {
@@ -74,7 +82,6 @@
 
 .product-page-description {
   padding: 2rem 0;
-  width: 100%;
   text-align: left;
 }  
 

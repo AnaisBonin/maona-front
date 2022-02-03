@@ -10,12 +10,6 @@
   font-size: 1.8rem;
 }
 
-.home-essentials-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .home-testimonials-title {
   width: 80%;
   text-align: center;

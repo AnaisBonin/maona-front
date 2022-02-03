@@ -1,3 +1,9 @@
+.products-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .product-card-container {
   width: 300px;
   margin: 2rem;

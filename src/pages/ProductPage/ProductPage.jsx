@@ -46,13 +46,6 @@ const ProductPage = () => {
     fetchCover();
   }, [id]);
 
-  console.log('product');
-  console.log(product);
-  console.log('cover');
-  console.log(cover);
-  console.log('images');
-  console.log(images);
-
   return (
     <main className="product-page-container">
       {product && (
