@@ -1,0 +1,33 @@
+.cart-validation-container {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(235, 235, 235, 0.5);
+}
+
+.cart-validation-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-validation-buttons button {
+  padding: 0.7rem 1rem;
+  margin: 1rem;
+  width: 110px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--cream);
+  font-weight: 400;
+  color: white;
+}
+
+.cart-validation-buttons .button-cancel-validation {
+  background-color: var(--orange);
+  color: white;
+}

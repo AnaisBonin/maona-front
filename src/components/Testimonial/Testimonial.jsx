@@ -17,7 +17,7 @@ const Testimonial = ({ text, i }) => {
     image = flowerorange;
   } else if (i === 2 || i === 5) {
     color = 'green';
-    image = 'flowergreen';
+    image = flowergreen;
   } else {
     color = 'blue';
     image = flowerblue;
