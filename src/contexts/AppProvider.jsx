@@ -9,27 +9,7 @@ import {
 const AppContext = createContext(null);
 
 const AppProvider = ({ children }) => {
-  const [cart, setCart] = useState([{
-    category: "femmes",
-    categoryId: 1,
-    coverPicture: 1,
-    description: "Description d'un chouchou rose en soie - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor, purus et accumsan scelerisque, arcu massa molestie massa, sit amet blandit erat tortor a ante. Cras ullamcorper turpis vitae laoreet elementum. Duis vestibulum sed dui sit amet efficitur.",
-    id: 8,
-    imageId: 8,
-    isAvailable: 1,
-    isEssential: 1,
-    link: "/uploads/chouchou_rouge.png",
-    name: "Chouchou rouge",
-    price: 25,
-    productId: 7,
-    review: null,
-    shortDescription: "Chouchou rose en soie - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor, purus et accumsan scelerisque, arcu massa molestie massa, sit amet blandit erat tortor a ante.",
-    stock: 20,
-    subCategoryId: 10,
-    subcategory: "accessoires",
-    title: "Chouchou rouge",
-    quantity: 1,
-  }]);
+  const [cart, setCart] = useState([]);
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [user, setUser] = useState();
 

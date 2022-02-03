@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useApp } from '../../contexts/AppProvider';
+import { Link } from 'react-router-dom';
 
 import CartArticle from '../../components/CartArticle/CartArticle';
 import PageTitle from '../../components/PageTitle/PageTitle';
@@ -39,6 +40,14 @@ const Cart = () => {
       <PageTitle title="Panier" />
       <section className="cart-articles-container">
       { cartArray && cartArray.map((article, i) => <CartArticle article={article} key={i} />
+      )}
+      { (cartArray.length === 0) && (
+      <div className="cart-no-article">
+        <p>Vous n'avez aucun article dans votre panier</p>
+        <Link to='/'>
+          <button>Continuez d'explorer</button>
+        </Link>
+      </div>
       )}
       </section>
       <section className="cart-total-order">

@@ -22,6 +22,10 @@ const CartArticle = ({ article }) => {
     );
   };
 
+  const handleDelete = () => {
+    setCart(cart.filter((product) => product.id !== article.id));
+  }
+
   useEffect(() => {
     setTotalPrice(article.quantity * article.price);
   }, [cart]);
@@ -53,7 +57,11 @@ const CartArticle = ({ article }) => {
         <h3>{article.name}</h3>
         <p>{article.shortDescription}</p>
         <p>{article.price}€</p>
-        <button type="button" className="cart-delete-article">
+        <button 
+          type="button"
+          className="cart-delete-article"
+          onClick={handleDelete}
+        >
           Supprimer
         </button>
       </div>
