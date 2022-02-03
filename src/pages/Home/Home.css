@@ -3,6 +3,7 @@
 }
 
 .home-container h2 {
+  padding: 1.5rem;
   padding-top: 3rem;
   color: var(--green);
   font-weight: 200;

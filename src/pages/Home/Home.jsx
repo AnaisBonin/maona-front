@@ -15,7 +15,7 @@ const Home = () => {
   const fetchEssentials = async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.REACT_APP_API_URL}/products?isEssential=true&isAvailable=true`
+        `${process.env.REACT_APP_API_URL}/products?isEssential=true&isAvailable=true`,
       );
 
       return setEssentials(data);
@@ -27,7 +27,7 @@ const Home = () => {
   const fetchTestimonials = async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.REACT_APP_API_URL}/testimonials`
+        `${process.env.REACT_APP_API_URL}/testimonials`,
       );
       return setTestimonials(data);
     } catch (err) {
@@ -45,21 +45,20 @@ const Home = () => {
       <AboutMe />
       <h2 className="home-essentials-title">Nos essentiels</h2>
       <div className="home-essentials-cards">
-
-      {essentials === 'error' && (
-        <p>Oops! Nous rencontrons une erreur - veuillez nous excuser.</p>
+        {essentials === 'error' && (
+          <p>Oops! Nous rencontrons une erreur - veuillez nous excuser.</p>
         )}
-      {essentials &&
-        essentials.map((product, i) => (
-          <ProductCard
-          name={product.name}
-          price={product.price}
-          shortDescription={product.shortDescription}
-          id={product.id}
-          key={i}
-          />
+        {essentials &&
+          essentials.map((product, i) => (
+            <ProductCard
+              name={product.name}
+              price={product.price}
+              shortDescription={product.shortDescription}
+              id={product.id}
+              key={i}
+            />
           ))}
-          </div>
+      </div>
       <h2 className="home-testimonials-title">Témoignages</h2>
       {testimonials &&
         testimonials.map((comment, i) => (

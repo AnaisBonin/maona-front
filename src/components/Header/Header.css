@@ -1,6 +1,5 @@
 header {
   width: 100vw;
-  margin-bottom: 3rem;
 }
 
 /*  */
@@ -45,6 +44,7 @@ header {
 /*  */
 
 .header-nav {
+  margin-bottom: 3rem;
   transition: all 0.5s ease-in-out;
   height: auto;
   opacity: 1;

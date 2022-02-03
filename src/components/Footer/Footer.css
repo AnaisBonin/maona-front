@@ -10,18 +10,18 @@ footer {
   min-width: 70vw;
   max-width: 600px;
   padding: 2rem;
-
 }
 
 .footer-nav li {
-  padding: 0.7rem;
+  padding: 0.6rem;
   width: fit-content;
-  transition: all 0.1s ease-in;
+  transition: all 0.1s ease-out;
 }
 
 .footer-nav li:hover {
-  color: var(--green);
   cursor: pointer;
+  color: var(--green);
+  font-weight: 400;
 }
 
 .footer-nav .footer-sub-category {
