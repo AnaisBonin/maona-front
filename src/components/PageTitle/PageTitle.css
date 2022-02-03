@@ -1,0 +1,8 @@
+.page-title {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100vw;
+  text-align: center;
+  color: var(--green);
+  border: 1px solid var(--light-grey);
+}

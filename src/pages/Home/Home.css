@@ -1,0 +1,17 @@
+.home-container {
+  margin: 2rem 0;
+}
+
+.home-container h2 {
+  padding: 1.5rem;
+  padding-top: 3rem;
+  color: var(--green);
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+
+.home-testimonials-title {
+  width: 80%;
+  text-align: center;
+  border-top: 2px solid var(--light-grey);
+}

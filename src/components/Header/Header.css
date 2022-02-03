@@ -1,0 +1,76 @@
+header {
+  width: 100vw;
+}
+
+/*  */
+/* HEADER LOGO */
+/*  */
+
+.header-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem;
+}
+
+.header-logos button {
+  background-color: inherit;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-active {
+  transform: rotate(90deg);
+}
+
+.header-menu-logo, .header-shopping-logo {
+  padding-top: 1rem;
+  width: 32px;
+}
+
+.maona-logo {
+  width: 200px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.maona-logo img {
+  width: 100%;
+}
+
+.header-shopping-quantity {
+  position: relative; 
+  top: -21px;
+  left: 12px;
+  color: var(--orange);
+}
+
+/*  */
+/* HEADER NAV */
+/*  */
+
+.header-nav {
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-in-out;
+  height: auto;
+  opacity: 1;
+}
+
+.menu-hidden {
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.header-nav li {
+  padding: 1.2rem 3rem;
+  border-bottom: 0.5px solid var(--light-grey);
+  transition: all 0.4s ease-in-out;
+}
+
+.header-nav li:hover {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--green);
+}

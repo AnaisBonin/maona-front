@@ -1,0 +1,17 @@
+.add-product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  background-color: var(--green);
+  color: white;
+}
+
+.add-product-button img {
+  width: 100%;
+}

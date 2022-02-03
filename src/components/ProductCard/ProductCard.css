@@ -1,0 +1,35 @@
+.products-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card-container {
+  width: 300px;
+  margin: 2rem;
+}
+
+.product-card-image {
+  width: 250px;
+  height: 250px;
+  margin: 0 25px;
+  background-color: var(--orange);
+}
+
+.product-card-image img {
+  width: 100%;
+}
+
+.product-card-information {
+  margin: 1rem 0;
+  line-height: 1.5rem;
+}
+
+.product-card-information p {
+  color: var(--blue);
+}
+
+.product-card-information h3 {
+  color: var(--blue);
+  font-weight: 400;
+}
