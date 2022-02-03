@@ -22,6 +22,7 @@ const AddButton = ({ product }) => {
         ...cart,
         {
           ...product,
+          quantity: 1,
         },
       ]);
     } else {

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
+import { useApp } from '../../contexts/AppProvider';
 import menu from '../../assets/icons/menu.png';
 import logo from '../../assets/logo/maona-logo.png';
 import bag from '../../assets/icons/bag.png';
@@ -8,6 +9,7 @@ import bag from '../../assets/icons/bag.png';
 import './Header.css';
 
 const Header = () => {
+  const { totalQuantity } = useApp();
   const [menuDisplayed, setMenuDisplayed] = useState(false);
 
   const handleClick = () => setMenuDisplayed(!menuDisplayed);
@@ -30,7 +32,12 @@ const Header = () => {
             className="header-shopping-logo"
             alt="icon of a shopping bag"
           />
+          { totalQuantity > 0 ? 
+            ( <p className="header-shopping-quantity">{totalQuantity}</p> )
+            : ''
+          }
         </Link>
+
       </div>
       {menuDisplayed && (
         <nav

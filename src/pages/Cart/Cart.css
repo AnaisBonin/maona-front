@@ -1,0 +1,38 @@
+.cart-total-order {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 3rem;
+  border-top: 2px solid var(--light-grey);
+  width: 80%;
+}
+
+.cart-total-order-information {
+  line-height: 2rem;
+}
+
+.cart-total-order-information p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.cart-total-order-information h3 {
+  margin: 1rem 0;
+  color: var(--green);
+  font-size: 1.5rem;
+}
+
+.cart-total-order-information button {
+  margin: 1rem 0;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+.cart-total-order img {
+  height: auto;
+}

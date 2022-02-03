@@ -39,6 +39,13 @@ header {
   width: 100%;
 }
 
+.header-shopping-quantity {
+  position: relative; 
+  top: -21px;
+  left: 12px;
+  color: var(--orange);
+}
+
 /*  */
 /* HEADER NAV */
 /*  */
