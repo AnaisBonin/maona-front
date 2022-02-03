@@ -33,6 +33,9 @@ const Footer = () => {
             <li className="footer-sub-category">Couvertures</li>
             <li className="footer-sub-category">Accessoires</li>
           </ul>
+          <Link to="/panier">
+            <li>Votre panier</li>
+          </Link>
           <Link to="/blog">
             <li>Blog</li>
           </Link>

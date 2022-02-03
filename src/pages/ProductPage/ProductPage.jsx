@@ -6,6 +6,7 @@ import AddButton from '../../components/AddButton/AddButton';
 import ProductReviews from '../../components/ProductReviews/ProductReviews';
 
 import './ProductPage.css';
+import PageTitle from '../../components/PageTitle/PageTitle';
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -33,9 +34,7 @@ const ProductPage = () => {
     <main className="product-page-container">
       {product && (
         <>
-          <h1 className="product-page-title allura">
-            Collection {product.category}
-          </h1>
+        <PageTitle title={`Collection ${product.category}`} />
           <section className="product-page-images">
             <img
               src={product.mainImage}

@@ -1,8 +1,12 @@
+import PageTitle from '../../components/PageTitle/PageTitle';
+
 import './Cart.css';
 
 const Cart = () => {
   return (
-    <main></main>
+    <main>
+      <PageTitle title="Panier" />
+    </main>
   );
 };
 

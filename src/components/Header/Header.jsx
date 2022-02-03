@@ -24,11 +24,13 @@ const Header = () => {
         <div className="maona-logo">
           <img src={logo} alt="Maona logo with flowers" />
         </div>
-        <img
-          src={bag}
-          className="header-shopping-logo"
-          alt="icon of a shopping bag"
-        />
+        <Link to="/panier">
+          <img
+            src={bag}
+            className="header-shopping-logo"
+            alt="icon of a shopping bag"
+          />
+        </Link>
       </div>
       {menuDisplayed && (
         <nav

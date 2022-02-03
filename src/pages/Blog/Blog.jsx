@@ -1,10 +1,12 @@
 import BlogArticle from '../../components/BlogArticle/BlogArticle';
+import PageTitle from '../../components/PageTitle/PageTitle';
+
 import './Blog.css';
 
 const Blog = () => {
   return (
     <main> 
-      <h1>Blog</h1>
+      <PageTitle title="Blog" />
       <BlogArticle />
     </main>
   );

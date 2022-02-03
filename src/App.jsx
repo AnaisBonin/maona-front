@@ -8,6 +8,7 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Products from './pages/Products/Products';
 import ProductPage from './pages/ProductPage/ProductPage';
+import Cart from './pages/Cart/Cart';
 import AppProvider from './contexts/AppProvider';
 
 import './App.css';
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/collection/:name" element={<Products />} />
           <Route path="/produits/:id" element={<ProductPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/panier" element={<Cart />} />
         </Routes>
         <Footer />
       </Router>
