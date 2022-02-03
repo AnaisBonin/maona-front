@@ -1,7 +1,17 @@
+.product-card-container {
+  width: 300px;
+  margin: 2rem;
+}
+
 .product-card-image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+  margin: 0 25px;
   background-color: var(--orange);
+}
+
+.product-card-image img {
+  width: 100%;
 }
 
 .product-card-information {
