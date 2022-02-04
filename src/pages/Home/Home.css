@@ -19,17 +19,23 @@
   max-width: 90%;
 }
 
+
+.home-essentials-content img {
+  width: 50px;
+  margin: 1rem;
+}
+
 @media screen and (min-width: 650px) {
   .home-essentials-content {
     display: flex;
     flex-direction: row;
     padding-bottom: 2rem;
   }
-}
 
-.home-essentials-content img {
-  width: 50px;
-  margin: 2rem;
+  .home-essentials-content img {
+    width: 50px;
+    margin: 2rem;
+  }
 }
 
 .home-essentials-introduction {

@@ -4,8 +4,15 @@
   align-items: center;
   width: 100vw;
   padding: 2rem;
+  margin: 1rem 0;
   background-color: var(--green);
   color: var(--light-grey);
+}
+
+@media screen and (min-width: 650px) {
+  .about-me {
+    margin: 3rem 0;
+  }
 }
 
 .about-me .about-me-title {

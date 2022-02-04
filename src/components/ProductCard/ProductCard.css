@@ -5,8 +5,14 @@
 }
 
 .product-card-container {
-  width: 300px;
+  width: 90%;
   margin: 2rem;
+}
+
+@media screen and (min-width: 300px) {
+  .product-card-container {
+    width: 350px;
+  }
 }
 
 .product-card-image {
