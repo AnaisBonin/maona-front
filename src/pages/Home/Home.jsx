@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import AboutMe from '../../components/AboutMe/AboutMe';
@@ -42,7 +43,9 @@ const Home = () => {
 
   return (
     <main className="home-container">
-      <AboutMe />
+      <Link to='/maona'>
+        <AboutMe />
+      </Link>
       <h2 className="home-essentials-title">Nos essentiels</h2>
       <section className="products-cards-container">
         {essentials === 'error' && (
