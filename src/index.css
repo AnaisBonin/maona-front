@@ -35,6 +35,10 @@ body {
   color: var(--orange);
 }
 
+.cream-text {
+  color: var(--cream);
+}
+
 main {
   display: flex;
   flex-direction: column;

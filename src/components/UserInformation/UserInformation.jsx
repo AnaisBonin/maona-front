@@ -57,6 +57,7 @@ const UserInformation = ({ setUserValid }) => {
     },
   });
 
+  
   return (
     <section className="user-information-container">
       <p>

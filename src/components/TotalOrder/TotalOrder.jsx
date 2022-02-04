@@ -1,5 +1,4 @@
 import { useApp } from '../../contexts/AppProvider';
-import CartValidation from '../../components/CartValidation/CartValidation';
 
 import flower from '../../assets/icons/flower-e-orange.png';
 
@@ -28,3 +27,4 @@ const TotalOrder = ({ setCartConfirmation }) => {
 };
 
 export default TotalOrder;
+

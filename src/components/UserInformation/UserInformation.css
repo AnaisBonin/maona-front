@@ -11,3 +11,7 @@
   color: white;
   font-weight: 400;
   }
+
+  .form-error {
+    color: var(--orange);
+  }

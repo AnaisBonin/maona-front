@@ -10,6 +10,36 @@
   font-size: 1.8rem;
 }
 
+.home-essentials-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 1rem;
+  max-width: 90%;
+}
+
+@media screen and (min-width: 650px) {
+  .home-essentials-content {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+}
+
+.home-essentials-content img {
+  width: 50px;
+  margin: 2rem;
+}
+
+.home-essentials-introduction {
+  margin: 1rem;
+  max-width: 550px;
+  color: var(--blue);
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
 .home-testimonials-title {
   width: 80%;
   text-align: center;

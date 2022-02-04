@@ -11,12 +11,14 @@
 }
 
 .input-form input, .input-form textarea{
-  width: 300px;
+  width: 350px;
+  max-width: 90vw;
   background-color: inherit;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border: 1px solid var(--light);
   border-radius: 35px;
   color: var(--blue);
+  font-size: 0.9rem;
 }
 
 .input-form input::placeholder, .input-form textarea::placeholder{
@@ -29,6 +31,6 @@
 }
 
 .input-form textarea {
- min-height: 100px;
+ min-height: 150px;
  border-radius: 10px;
 }

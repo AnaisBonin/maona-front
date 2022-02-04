@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import AboutMe from '../../components/AboutMe/AboutMe';
-
 import ProductCard from '../../components/ProductCard/ProductCard';
 import Testimonial from '../../components/Testimonial/Testimonial';
+
+import flower from '../../assets/icons/flower-a-yellow.png';
 
 import './Home.css';
 
@@ -47,6 +48,11 @@ const Home = () => {
         <AboutMe />
       </Link>
       <h2 className="home-essentials-title">Nos essentiels</h2>
+      <div className="home-essentials-content">
+        <img src={flower} alt="Icone d'une fleur jaune" />
+        <p className="home-essentials-introduction">&#10001; Découvrez les produits phares de l'Atelier Maona et nos coups de coeur. Nous renouvelons régulièrement nos produits, selon la saison et nos inspirations créatives. Avons-tous, nous souhaitons produire avec passion, et offrir une gamme unique, respectueuse de l'environnement &#9842;</p>
+        <img src={flower} alt="Icone d'une fleur jaune" />
+      </div>
       <section className="products-cards-container">
         {essentials === 'error' && (
           <p>Oops! Nous rencontrons une erreur - veuillez nous excuser.</p>

@@ -24,9 +24,11 @@ const Header = () => {
           <img src={menu} className="header-menu-logo" alt="icon of a menu" />
         </button>
         <div className="maona-logo">
-          <img src={logo} alt="Maona logo with flowers" />
+          <Link to="/">
+            <img src={logo} alt="Maona logo with flowers" />
+          </Link>
         </div>
-        <Link to="/panier">
+        <Link to="/panier" onClick={() => setMenuDisplayed(false)}>
           <img
             src={bag}
             className="header-shopping-logo"
