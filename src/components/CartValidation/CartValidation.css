@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 3;
@@ -11,9 +12,28 @@
   background-color: rgb(235, 235, 235, 0.5);
 }
 
+.validation-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid var(--light-grey);
+  border-radius: 15px;
+  width: 400px;
+  min-height: 200px;
+  padding: 2rem;
+  color: var(--bleu);
+}
+
+.cart-validation-order h3 {
+  margin: 1rem 0;
+  color: var(--green);
+}
+
 .cart-validation-buttons {
   display: flex;
   justify-content: space-around;
+  margin-top: 2rem;
 }
 
 .cart-validation-buttons button {

@@ -19,9 +19,7 @@ const ShoppingCart = () => {
       <PageTitle title="Panier" />
       <section className="cart-articles-container">
         {cart &&
-          cart.map((article, i) => (
-            <CartArticle article={article} key={i} />
-          ))}
+          cart.map((article, i) => <CartArticle article={article} key={i} />)}
         {cart.length === 0 && (
           <div className="cart-no-article">
             <p>Vous n'avez aucun article dans votre panier</p>
@@ -34,6 +32,7 @@ const ShoppingCart = () => {
       <TotalOrder setCartConfirmation={setCartConfirmation} />
       {cartConfirmation && (
         <CartValidation
+          cartConfirmation={cartConfirmation}
           setCartConfirmation={setCartConfirmation}
         />
       )}

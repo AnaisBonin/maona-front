@@ -8,7 +8,7 @@ import InputForm from '../InputForm/InputForm';
 
 import './UserInformation.css';
 
-const UserInformation = () => {
+const UserInformation = ({ setUserValid }) => {
   const { user, setUser } = useApp();
   const [error, setError] = useState(null);
 
@@ -39,20 +39,19 @@ const UserInformation = () => {
       return errors;
     },
     onSubmit: async (values) => {
-      const existingUser = await axios.get(`${process.env.REACT_APP_API_URL}/users?email=${values.email}`);
+      // const existingUser = await axios.get(`${process.env.REACT_APP_API_URL}/users?email=${values.email}`);
       
-      if (existingUser) {
-        console.log('user exist');
-        return console.log(existingUser);
-      }
+      // if (existingUser) {
+      //   const { data } = existingUser;
+      //   const userId = data[0].id;
+      //   return setUser({...user, userId });
+      // }
 
       try {
-        const data = await axios.post(`${process.env.REACT_APP_API_URL}/users`, values);
-        console.log('post data');
-        return console.log(data);
+        const { data } = await axios.post(`${process.env.REACT_APP_API_URL}/users`, values);
+        setUser(data);
+        return setUserValid(true);
       } catch (err){
-        setError(err);
-        console.log('erreur');
         return console.log(err);
       }
     },

@@ -7,23 +7,24 @@ import './TotalOrder.css';
 
 const TotalOrder = ({ setCartConfirmation }) => {
   const { finalOrder, totalQuantity } = useApp();
-  const { totalOrder } = finalOrder;
 
   const handleValidation = () => setCartConfirmation(true);
 
   return (
     <section className="total-order-container">
-      <div className="cart-total-order-information">
+      {finalOrder && (
+        <div className="cart-total-order-information">
           <h3>Total de votre commande :</h3>
           <p>{totalQuantity} articles</p>
-          <p>{totalOrder}€</p>
+          <p>{finalOrder.totalOrder}€</p>
           <button type="button" onClick={handleValidation}>
             Valider
           </button>
         </div>
-        <img src={flower} alt="Image of an orange flower" />
+      )}
+      <img src={flower} alt="Image of an orange flower" />
     </section>
-  )
+  );
 };
 
 export default TotalOrder;
