@@ -65,6 +65,7 @@ const CartValidation = ({ cartConfirmation, setCartConfirmation }) => {
     if (saveOrder) {
       sendOrderLinesToDB();
       setCartConfirmation(false);
+      navigator('/');
     }
   }, [saveOrder]);
 
