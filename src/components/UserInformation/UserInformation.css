@@ -1,0 +1,13 @@
+.user-information-container p {
+  margin: 1rem;
+}
+
+.user-information-container button {
+  padding: 0.7rem 1.5rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--cream);
+  color: white;
+  font-weight: 400;
+  }

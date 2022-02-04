@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { useApp } from '../../contexts/AppProvider';
 
 import './CartArticle.css';
@@ -31,9 +32,9 @@ const CartArticle = ({ article }) => {
   }, [cart]);
 
   useEffect(() => {
+    console.log(totalPrice);
     setCart(
-      cart.map((product) =>
-        product.id === article.id
+      cart.map((product) => (product.id === article.id)
           ? {
               ...product,
               totalPrice,
@@ -41,9 +42,7 @@ const CartArticle = ({ article }) => {
           : product,
       ),
     );
-  }, [totalPrice]);
-
-  console.log(article);
+  }, [totalPrice, article.quantity]);
 
   return (
     <div className="cart-article-box">

@@ -42,7 +42,7 @@ header {
 .header-shopping-quantity {
   position: relative; 
   top: -21px;
-  left: 12px;
+  left: 10px;
   color: var(--orange);
 }
 

@@ -12,6 +12,23 @@ const AppProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [user, setUser] = useState();
+  const [finalOrder, setFinalOrder] = useState();
+
+  const totalOrder = () => {
+    const array = cart.map((article) => article.totalPrice);
+    const reducer = (a, b) => a + b;
+    let total = 0;
+
+    if (cart.length > 0) {
+      total = array.reduce(reducer);
+    }
+
+    return setFinalOrder({...finalOrder, totalOrder: total});
+  };
+
+    useEffect(() => {
+      totalOrder();
+    }, [cart]);
 
   useEffect(() => {
     if (cart.length > 0) {
@@ -34,7 +51,9 @@ const AppProvider = ({ children }) => {
     setTotalQuantity,
     user,
     setUser,
-  }), [cart, totalQuantity, user]);
+    finalOrder,
+    setFinalOrder
+  }), [cart, totalQuantity, user, finalOrder]);
 
   return (
     <AppContext.Provider value={AppStates}>

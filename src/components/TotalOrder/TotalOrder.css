@@ -1,4 +1,4 @@
-.cart-total-order {
+.total-order-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,27 +8,6 @@
   width: 80%;
 }
 
-.cart-no-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 4rem 2rem;
-}
-
-.cart-no-article button {
-  margin: 2rem;
-  padding: 0.8rem 1.4rem;
-  background-color: var(--cream);
-  color: white;
-  border: none;
-  border-radius: 35px;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-}
-
-.cart-no-article button:hover {
-  background-color: var(--orange);
-}
 
 .cart-total-order-information {
   line-height: 2rem;

@@ -74,12 +74,17 @@
   font-size: 1.4rem;
 }
 
+.cart-article-cercle label {
+  position: relative;
+  left: 7px;
+}
+
 .cart-article-cercle input {
   position: relative;
-  right: -8px;
-  max-width: 60%;
+  right: -10px;
+  max-width: 100%;
   text-align: center;
-  background-color: inherit;
+  background-color: transparent;
   color: white;
   border: none;
   outline: none;
