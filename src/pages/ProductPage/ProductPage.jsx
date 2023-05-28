@@ -56,7 +56,7 @@ const ProductPage = () => {
               <img
                 src={`${process.env.REACT_APP_API_URL}${cover[0].link}`}
                 className="main-product-image"
-                alt="Image d'une gigoteuse d'été"
+                alt="Gigoteuse d'été"
               />
             )}
             {images && (

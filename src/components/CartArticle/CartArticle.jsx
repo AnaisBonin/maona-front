@@ -15,9 +15,9 @@ const CartArticle = ({ article }) => {
       cart.map((product) =>
         product.id === article.id
           ? {
-              ...product,
-              quantity: parseInt(e.target.value),
-            }
+            ...product,
+            quantity: parseInt(e.target.value),
+          }
           : product,
       ),
     );
@@ -35,11 +35,11 @@ const CartArticle = ({ article }) => {
     console.log(totalPrice);
     setCart(
       cart.map((product) => (product.id === article.id)
-          ? {
-              ...product,
-              totalPrice,
-            }
-          : product,
+        ? {
+          ...product,
+          totalPrice,
+        }
+        : product,
       ),
     );
   }, [totalPrice, article.quantity]);
@@ -49,14 +49,14 @@ const CartArticle = ({ article }) => {
       <div className="cart-article-img">
         <img
           src={`${process.env.REACT_APP_API_URL}${article.link}`}
-          alt={`Image of a ${article.name}`}
+          alt={`One of our ${article.name}`}
         />
       </div>
       <div className="cart-article-information">
         <h3>{article.name}</h3>
         <p>{article.shortDescription}</p>
         <p>{article.price}€</p>
-        <button 
+        <button
           type="button"
           className="cart-delete-article"
           onClick={handleDelete}
@@ -76,7 +76,7 @@ const CartArticle = ({ article }) => {
             min="1"
             max={article.stock}
             onChange={handleChange}
-            />
+          />
         </div>
         <p>total : <span className="article-total-price">{totalPrice}€</span></p>
       </div>

@@ -12,7 +12,7 @@ const Testimonial = ({ text, i }) => {
     color = 'blue';
     image = flowerblue;
   } else if
-  (i === 1 || i === 4) {
+    (i === 1 || i === 4) {
     color = 'orange';
     image = flowerorange;
   } else if (i === 2 || i === 5) {
@@ -25,7 +25,7 @@ const Testimonial = ({ text, i }) => {
 
   return (
     <div className="testimonial-container">
-      <img src={image} alt={`image of a flower ${color}`} />
+      <img src={image} alt={`Design of a flower ${color}`} />
       <p className={`${color}-text`} >{text}</p>
     </div>
   );

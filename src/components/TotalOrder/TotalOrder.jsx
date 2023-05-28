@@ -1,5 +1,4 @@
 import { useApp } from '../../contexts/AppProvider';
-import CartValidation from '../../components/CartValidation/CartValidation';
 
 import flower from '../../assets/icons/flower-e-orange.png';
 
@@ -22,7 +21,7 @@ const TotalOrder = ({ setCartConfirmation }) => {
           </button>
         </div>
       )}
-      <img src={flower} alt="Image of an orange flower" />
+      <img src={flower} alt="An orange flower" />
     </section>
   );
 };
