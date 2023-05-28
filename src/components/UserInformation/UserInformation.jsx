@@ -9,8 +9,8 @@ import InputForm from '../InputForm/InputForm';
 import './UserInformation.css';
 
 const UserInformation = ({ setUserValid }) => {
-  const { user, setUser } = useApp();
-  const [error, setError] = useState(null);
+  const { setUser } = useApp();
+  const [error] = useState(null);
 
   const formik = useFormik({
     initialValues: {
@@ -31,7 +31,7 @@ const UserInformation = ({ setUserValid }) => {
       if (!values.firstname) {
         errors.firstname = 'Prénom requis';
       }
-      
+
       if (!values.lastname) {
         errors.lastname = 'Nom requis';
       }
@@ -40,7 +40,7 @@ const UserInformation = ({ setUserValid }) => {
     },
     onSubmit: async (values) => {
       // const existingUser = await axios.get(`${process.env.REACT_APP_API_URL}/users?email=${values.email}`);
-      
+
       // if (existingUser) {
       //   const { data } = existingUser;
       //   const userId = data[0].id;
@@ -51,7 +51,7 @@ const UserInformation = ({ setUserValid }) => {
         const { data } = await axios.post(`${process.env.REACT_APP_API_URL}/users`, values);
         setUser(data);
         return setUserValid(true);
-      } catch (err){
+      } catch (err) {
         return console.log(err);
       }
     },

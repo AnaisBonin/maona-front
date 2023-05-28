@@ -25,7 +25,7 @@ const BlogArticle = () => {
         article.map((article, i) => (
           <article className="article-container" key={i}>
             <h2>{article.title}</h2>
-            <img src={`${process.env.REACT_APP_API_URL}${article.img}`} alt="Picture of a workshop" />
+            <img src={`${process.env.REACT_APP_API_URL}${article.img}`} alt="Our workshop" />
             <BlogParagraph />
           </article>
         ))}
