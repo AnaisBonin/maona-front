@@ -39,7 +39,6 @@ const CartValidation = ({ cartConfirmation, setCartConfirmation }) => {
   };
 
   const handleValidate = () => {
-    console.log(finalOrder);
     sendOrderToDB();
     setSaveOrder(true);
   };
@@ -52,9 +51,8 @@ const CartValidation = ({ cartConfirmation, setCartConfirmation }) => {
     () =>
       setFinalOrder({
         ...finalOrder,
-        id: `${new Date().getFullYear()}${
-          new Date().getMonth() + 1
-        }${new Date().getDate()}${new Date().getUTCMilliseconds()}`,
+        id: `${new Date().getFullYear()}${new Date().getMonth() + 1
+          }${new Date().getDate()}${new Date().getUTCMilliseconds()}`,
         date: new Date(),
         status: 'En cours',
       }),

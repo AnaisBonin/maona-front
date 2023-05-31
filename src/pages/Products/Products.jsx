@@ -19,8 +19,6 @@ const Products = () => {
     setProducts(data);
   };
 
-  console.log(products);
-
   useEffect(() => {
     fetchProductsByCategory();
   }, [categoryName]);
@@ -29,7 +27,7 @@ const Products = () => {
     <main>
       <PageTitle title={`Collection pour ${categoryName}`} />
       <section className="products-cards-container">
-      {products &&
+        {products &&
           products.map((product, i) => (
             <ProductCard
               name={product.name}

@@ -30,14 +30,12 @@ const AddButton = ({ product }) => {
     }
   };
 
-  console.log(cart);
-
   return (
     <button className="add-product-button" onClick={handleClick}>
-      { isInCart 
-      ? <img src={flower} alt="Icone d'une fleur blanche" />
-      : <p>+</p>
-    }
+      {isInCart
+        ? <img src={flower} alt="Icone d'une fleur blanche" />
+        : <p>+</p>
+      }
     </button>
   );
 };

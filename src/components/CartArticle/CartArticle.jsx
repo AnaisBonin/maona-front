@@ -32,7 +32,6 @@ const CartArticle = ({ article }) => {
   }, [cart]);
 
   useEffect(() => {
-    console.log(totalPrice);
     setCart(
       cart.map((product) => (product.id === article.id)
         ? {

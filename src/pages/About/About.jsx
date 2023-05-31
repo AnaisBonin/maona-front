@@ -1,4 +1,5 @@
 import PageTitle from '../../components/PageTitle/PageTitle';
+
 import './About.css';
 
 const About = () => {

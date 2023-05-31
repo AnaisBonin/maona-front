@@ -26,7 +26,7 @@ const ProductReviews = ({ productId }) => {
   };
 
   const handleclickRight = () => {
-    if (number+1 < reviews.length) {
+    if (number + 1 < reviews.length) {
       setNumber(number + 1);
     }
   };
@@ -40,8 +40,6 @@ const ProductReviews = ({ productId }) => {
       setSelectedReview(reviews[number]);
     }
   }, [reviews, number]);
-  
-  console.log(selectedReview);
 
   return (
     <section className="product-reviews-container">
@@ -58,7 +56,7 @@ const ProductReviews = ({ productId }) => {
           </button>
           <div>
             <p>{selectedReview.text} <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor, purus et accumsan scelerisque, arcu massa molestie massa, sit amet blandit erat tortor a ante. </p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor, purus et accumsan scelerisque, arcu massa molestie massa, sit amet blandit erat tortor a ante. </p>
             <p className="review-writter">{selectedReview.firstname}</p>
           </div>
           <button type="button" onClick={handleclickRight}>

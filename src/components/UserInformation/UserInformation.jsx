@@ -52,7 +52,7 @@ const UserInformation = ({ setUserValid }) => {
         setUser(data);
         return setUserValid(true);
       } catch (err) {
-        return console.log(err);
+        return console.error(err);
       }
     },
   });
