@@ -42,6 +42,9 @@ const Footer = () => {
           <Link to="/contact">
             <li>Contact</li>
           </Link>
+          <Link to="/authentification">
+            <li>Auth</li>
+          </Link>
         </ul>
       </nav>
       <div className="footer-socials">

@@ -10,6 +10,7 @@ import Products from './pages/Products/Products';
 import ProductPage from './pages/ProductPage/ProductPage';
 import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
 import AppProvider from './contexts/AppProvider';
+import Authentification from './pages/Authentification/Authentification';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/collection/:name" element={<Products />} />
           <Route path="/produits/:id" element={<ProductPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/authentification" element={<Authentification />} />
           <Route path="/panier" element={<ShoppingCart />} />
         </Routes>
         <Footer />
