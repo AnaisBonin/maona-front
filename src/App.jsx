@@ -13,6 +13,7 @@ import AppProvider from './contexts/AppProvider';
 import Authentification from './pages/Authentification/Authentification';
 
 import './App.css';
+import PostAuth from './pages/Authentification/PostOath';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/produits/:id" element={<ProductPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/authentification" element={<Authentification />} />
+          <Route path="/post_auth" element={<PostAuth />} />
           <Route path="/panier" element={<ShoppingCart />} />
         </Routes>
         <Footer />
